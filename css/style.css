@@ -1,0 +1,230 @@
+/*===general===*/
+  /*==fonts==*/
+
+@font-face {
+    font-family: 'arkhipregular';
+    src: url('../font/arkchip/arkhip_font-webfont.eot');
+    src: url('../font/arkchip/arkhip_font-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../font/arkchip/arkhip_font-webfont.woff2') format('woff2'),
+    url('../font/arkchip/arkhip_font-webfont.woff') format('woff'),
+    url('../font/arkchip/arkhip_font-webfont.ttf') format('truetype'),
+    url('../font/arkchip/arkhip_font-webfont.svg#arkhipregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body{
+    max-width: 2000px;
+    font-family: 'Alegreya Sans', sans-serif;
+    letter-spacing: 1px;
+    font-weight: bolder;
+
+
+}
+h1{
+
+}
+h2{
+    font-size: 80px;
+}
+h3{
+    font-size: 36px;
+}
+
+
+
+
+/*===header===*/
+header{
+    height: 100vh;
+    background-image: url("../img/header-back.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: aliceblue;
+    padding: 15px 20px;
+
+}
+
+      /*===nav===*/
+        /*==menu==*/
+#toggle {
+    width: 28px;
+    height: 30px;
+    margin: 10px auto;
+}
+
+#toggle div {
+    width: 100%;
+    height: 5px;
+    background: white;
+    margin: 4px auto;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+}
+
+#toggle.on .one {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+#toggle.on .two {
+    opacity: 0;
+}
+
+#toggle.on .three {
+    transform: rotate(-45deg) translate(7px, -8px);
+}
+
+#menu {
+    color: white;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    margin: auto;
+    display: none;
+}
+    nav{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        color: aliceblue;
+        font-family: 'arkhipregular',sans-serif;
+
+       /* border-bottom: 1px solid aliceblue;*/
+    }
+    nav h1{
+        font-size: 18px;
+    }
+    .nav-menu{
+        position: fixed;
+        display: flex;
+        right: 5px;
+    }
+
+    nav #menu a {
+        padding: 15px;
+        color: aliceblue;
+        text-transform: capitalize;
+        text-decoration: none;
+        border-radius: 2px;
+
+    }
+    nav #menu a:hover{
+        text-decoration:none;
+        color: aliceblue;
+        background-color: #F05F40;
+        transition: background-color 2s;
+
+
+    }
+.home{
+    width: 100%;
+    padding: 50px 0;
+    border: 1px solid aliceblue;
+    margin-top: 100px;
+    text-align: center;
+
+}
+.home h2, .home p{
+    text-align: center;
+}
+.home h2{
+    color: #F05F40;
+    text-transform: uppercase;
+}
+.cv-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.cv-btn .btn{
+    width: 30%;
+    background-color:transparent;
+    color:  #F05F40;
+    font-size: 18px;
+    border: 1px solid #F05F40;
+    margin-top: 20px ;
+
+}
+/*==Main==/
+
+/*==techno==*/
+.techno{
+    width: 100%;
+    padding: 50px 10px;
+    background-color: #F05F40;
+}
+
+.techno h3{
+    color: white;
+}
+.techno-content{
+    width: 100%;
+    text-align: center;
+}
+.btn{
+    padding:5px 30px;
+    color: #F05F40 ;
+}
+.languages-content{
+   /* display: flex;*/
+    /*flex-direction: row;*/
+    /*justify-content: space-around;*/
+    margin-top: 20px;
+}
+.languages{
+    margin: 20px 0;
+    border-left: 1px solid white;
+
+}
+
+.languages img{
+    background-color: white;
+    border-radius: 50%;
+    padding:5px;
+    -webkit-filter: grayscale(35%);
+    filter: grayscale(35%);
+}
+.languages img:hover{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform:rotate(360deg) ;
+    -ms-transform: rotate(360deg);
+    -o-transform:rotate(360deg) ;
+    -webkit-transition: transform 1s;
+    -moz-transition: transform 1s;
+    -ms-transition:transform 1s;
+    -o-transition: transform 1s;
+    transition: transform 1s;
+
+}
+
+/*===projects===*/
+.projects{
+    width: 100%;
+    padding: 35px 0;
+    padding: 15px 20px;
+}
+.projects-box{
+    background-image: url("../img/header-back.jpg");
+    background-size: cover;
+    height: 150px;
+    border: 1px solid white;
+}
+.projects-box:hover{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform:rotate(360deg) ;
+    -ms-transform: rotate(360deg);
+    -o-transform:rotate(360deg) ;
+    -webkit-transition: transform 1s;
+    -moz-transition: transform 1s;
+    -ms-transition:transform 1s;
+    -o-transition: transform 1s;
+    transition: transform 1s;
+
+}
+.projects h3{
+    color: #F05F40;
+}
