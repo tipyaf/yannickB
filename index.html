@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Yannick Benchimol</title>
     <link rel="stylesheet" href="css/normalize.css">
     <!-- Latest compiled and minified CSS -->
@@ -10,6 +11,7 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:400,800' rel='stylesheet' type='text/css'>
+
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -41,21 +43,17 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, itaque, reprehenderit? Accusantium asperiores dolores impedit inventore officiis perspiciatis quasi quo rerum tempore voluptatem! Asperiores ipsam magnam necessitatibus nulla optio perferendis, porro qui quidem suscipit tempore!</p>
         <!--<q>Ils ne savaient pas que c'était impossible alors ils l'ont fait.</q><cite>Mark Twain</cite> -->
         <div class="cv-btn">
-            <button type="button" class="btn">Cv Vidéo <i class="fa fa-youtube" aria-hidden="true"></i></button>
-            <button type="button" class="btn">Cv Pdf <i class="fa fa-file-pdf-o" aria-hidden="true"></i></button>
+            <button type="button" class="btn md-trigger" data-modal="modal-12"><span>Découvrir le CV vidéo </span><i class="fa fa-youtube" aria-hidden="true"></i></button>
+            <button type="button" class="btn"><span>Télécharger le CV en Pdf</span> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></button>
         </div>
     </div>
 
 </header>
+
 <main>
     <section class="container-fluid techno">
-        <h3><i class="fa fa-code" aria-hidden="true"></i>Langages, frameworks et logiciels utilisés</h3>
+        <h3><i class="fa  fa-cog" aria-hidden="true"></i>Langages, Frameworks et Logiciels</h3>
         <div class="techno-content">
-            <div class="btn-group" role="group" aria-label="...">
-                <button id="htmlBtn"type="button" class="btn btn-default">Web</button>
-                <button id="jsBtn" type="button" class="btn btn-default">Images</button>
-                <button id="phpBtn" type="button" class="btn btn-default">Audio</button>
-            </div>
             <div class="row languages-content">
                 <div class="languages html col-xs-12 col-sm-4 col-md-4 col-lg-4">
                     <div class="languages-elements col-xs-12 col-sm-6 col-md-6 col-lg-6">
@@ -67,7 +65,6 @@
                         <img src="img/bootstrap.png" alt="bootstrap">
                         <p>Bootstrap</p>
                     </div>
-
                 </div>
                 <div class="languages js col-xs-12 col-sm-4 col-md-4 col-lg-4">
                     <div class="languages-elements col-xs-3 col-md-3 col-sm-3 col-lg-3">
@@ -88,7 +85,6 @@
                         </div>
                     </div>
 
-
                 <div class="languages php col-xs-12 col-sm-4 col-md-4 col-lg-4">
                     <div class="languages-elements col-xs-12 col-sm-6 col-md-6 col-lg-6">
                         <img src="img/elephpant.png" alt="php">
@@ -102,16 +98,96 @@
                     </div>
                 </div>
             </div>
+            <div class=" languages-content">
+                <div class=" row languages image col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <div class="languages-elements col-xs-3 col-sm-3">
+                        <img src="img/photoshop.png" alt="photoshop">
+                        <p>Photoshop</p>
+                    </div>
+                    <div class="languages-elements col-xs-3 col-md-3">
+                        <img src="img/premiere-pro.png" alt="premiere pro">
+                        <p>Premiere Pro</p>
+                    </div>
+                    <div class="languages-elements col-xs-3 col-md-3">
+                        <img src="img/after.png" alt="aftereffect">
+                        <p>After Effect</p>
+                    </div>
+                    <div class="languages-elements col-xs-3 col-md-3">
+                        <img src="img/fcpx.png" alt="finalcut">
+                        <p>Final Cut Pro X</p>
+                    </div>
+                </div>
+                <div class=" row languages audio col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <div class="languages-elements col-xs-3 col-md-3">
+                        <img src="img/live.png" alt="abletonp">
+                        <p>Ableton Live</p>
+                    </div>
+                    <div class="languages-elements col-xs-3 col-md-3">
+                        <img src="img/Logic.png" alt="Logic Pro">
+                        <p>Logic Pro X</p>
+                    </div>
+                    <div class="languages-elements col-xs-3 col-md-3">
+                        <img src="img/cubase.png" alt="aftereffect">
+                        <p>Cubase</p>
+                    </div>
+                    <div class="languages-elements col-xs-3 col-md-3">
+                        <img src="img/protools.png" alt="finalcut">
+                        <p>Pro Tools</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="btn-group btn-languages" role="group">
+                <button id="webBtn" type="button" class="btn btn-default btn-sm">Web</button>
+                <button id="imageBtn" type="button" class="btn btn-default btn-sm">Images</button>
+                <button id="audioBtn" type="button" class="btn btn-default btn-sm">Audio</button>
+            </div>
         </div>
+
     </section>
     <section id="projects"class="container projects">
-        <h3><i class="fa fa-line-chart" aria-hidden="true"></i>Projets</h3>
+        <h3><i class="fa fa-code" aria-hidden="true"></i>Projets</h3>
         <div class="row">
 
-                <div class="col-xs-12 col-md-6 col-sm-6 col-lg-6 projects-box"></div>
-                <div class="col-xs-12 col-md-6 col-sm-6 col-lg-6 projects-box"></div>
-                <div class="col-xs-12 col-md-6 col-sm-6 col-lg-6 projects-box"></div>
-                <div class="col-xs-12 col-md-6 col-sm-6 col-lg-6 projects-box"></div>
+                <div class="col-xs-12 col-md-6 col-sm-6 col-lg-6 box">
+                    <div class="projects-box hoverme">
+                        <a href="http://upto-numerique.fr/" target="_blank">
+                            <img src="img/header-mini.jpg" alt="">
+                            <figcaption><span><h4>Application: Compte d'une colocation</h4><div> <img src="img/AngularJS.png" alt="angularjs"></div></span></figcaption>
+                            </a>
+                    </div>
+                </div>
+            <div class="col-xs-12 col-md-6 col-sm-6 col-lg-6 box">
+
+                <div class="projects-box hoverme">
+                    <a href="http://upto-numerique.fr/" target="_blank">
+                        <img src="img/header-mini.jpg" alt="">
+                        <figcaption><span><h4>Exemple d'intégration Web</h4><div>  <img src="img/html.png" alt="html5">
+                        <img src="img/css3.png" alt="Css"><img src="img/jquery_logo.png" alt="jquery"></div></span></figcaption>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-sm-6 col-lg-6 box">
+                <div class="projects-box hoverme">
+                    <a href="http://upto-numerique.fr/" target="_blank">
+                        <img src="img/header-mini.jpg" alt="">
+                        <figcaption><span><h4>Challenge Start-Up: Help!</h4><div>  <img src="img/html.png" alt="html5">
+                            <img src="img/css3.png" alt="Css"><img src="img/jquery_logo.png" alt="jquery"><img src="img/fcpx.png" alt="finalcut"><img src="img/Logic.png" alt="Logic_pro"></div></span></figcaption>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-sm-6 col-lg-6 box">
+                <div class="projects-box hoverme">
+                    <a href="http://upto-numerique.fr/" target="_blank">
+                        <img src="img/header-mini.jpg" alt="">
+                        <figcaption><span><h4>Site Upto-numerique.fr</h4><div><img src="img/html.png" alt="html5">
+                            <img src="img/css3.png" alt="Css"><img src="img/gulp.png" alt="gulp"><img src="img/fcpx.png" alt="finalcut">
+                            <img src="img/Logic.png" alt="Logic_pro"></div></span></figcaption>
+                    </a>
+
+                </div>
+            </div>
+
 
 
 
@@ -120,8 +196,25 @@
 
 </main>
 
+<!--modal-->
+<div class="md-modal md-effect-12">
+    <div class="md-content">
+        <h3>Cv Vidéo</h3>
+        <div>
+            <p>Pour mieux me présenter j'ai réalisé cette vidéo:</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0VWmSo6XKac" frameborder="0" allowfullscreen></iframe>
+            <button class="md-close">Fermer</button>
+        </div>
+    </div>
+</div>
+
+<div class="md-overlay"></div>
+<!--modal end-->
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="js/menu.js"></script>
+<script src="js/languages.js"></script>
+<script src="js/modal.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 </body>
