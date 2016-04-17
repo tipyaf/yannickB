@@ -702,6 +702,7 @@ figcaption img{
     .video-project .provisoire{
         text-transform: uppercase;
         font-size: 25px;
+        margin-top: 55px;
     }
 /*===contacts===*/
 .contacts{
@@ -749,6 +750,8 @@ figcaption img{
 }
 .social a:hover{
     color: #F05F40;
+    -webkit-transition: color 2s;
+    transition: color 2s;
 }
 /*===footer===*/
 footer{
