@@ -5,7 +5,9 @@ stop video quand close modal
 scroll smooth
 move div time line on scroll
 
-
+gulp uglify js
+Combine external JavaScript
+animated.css only used
 
 
 
