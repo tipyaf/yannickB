@@ -87,4 +87,4 @@ $(function(){
     //prepare to volume
    // widget1.setVolume(0.1);
 
-})
+});
