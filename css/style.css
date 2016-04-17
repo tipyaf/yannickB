@@ -36,6 +36,13 @@ h3{
 h3 i{
     margin-right: 15px ;
 }
+#hobbies, #contacts{
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 
 
 
@@ -154,12 +161,14 @@ header{
 
 
     }
+
 .home{
     width: 100%;
     padding: 50px 8px;
     border: 1px solid aliceblue;
     margin-top: 100px;
     text-align: center;
+
 
 }
 .home h2, .home p{
@@ -273,7 +282,7 @@ header{
 /*==techno==*/
 .techno{
     width: 100%;
-    padding: 50px 10px;
+    padding: 90px 10px;
     background-color: #F05F40;
 }
 
@@ -336,7 +345,7 @@ button i{
 .projects{
     width: 100%;
     padding: 35px 0;
-    padding: 15px 20px;
+    padding: 75px 20px;
 }
 .projects-content{
     width: 100%;
@@ -413,10 +422,12 @@ figcaption img{
     background-size: cover;
     background-attachment: fixed;
     background-color: rgba(242, 96, 65, 0.8);
+    padding-top: 75px;
+    padding-bottom: 75px;
 }
 .cv h3{
     color: white;
-    padding: 15px;
+
 }
         /* -----------------------------------------------
          * Timeline
@@ -710,7 +721,7 @@ figcaption img{
     background-attachment: fixed;
     background-size: cover;
     color: white;
-    padding: 5px;
+    /*padding: 5px;*/
 }
 .contact-content{
     display: -webkit-box;
