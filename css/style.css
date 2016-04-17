@@ -154,7 +154,6 @@ header{
     width: 30%;
     background-color:transparent;
     color:  #F05F40;
-    font-size: 18px;
     border: 1px solid #F05F40;
     margin-top: 20px ;
 
@@ -322,12 +321,8 @@ button i{
     /*width: 50%;*/
 /*}*/
 .projects-box{
-
-    /*height: 150px;*/
     border: 1px solid white;
 }
-
-
 
 .projects h3{
     color: #F05F40;
@@ -339,16 +334,17 @@ button i{
     float: left;
     display: inline;
     width: 100%;
-    /*height: 200px;*/
 }
 .hoverme img {
-
     -webkit-transition: 0.6s cubic-bezier(0.665, 0, 0.43, 1) all;
     -moz-transition: 0.6s cubic-bezier(0.665, 0, 0.43, 1) all;
     -o-transition: 0.6s cubic-bezier(0.665, 0, 0.43, 1) all;
     -ms-transition: 0.6s cubic-bezier(0.665, 0, 0.43, 1) all;
     transition: 0.6s cubic-bezier(0.665, 0, 0.43, 1) all;
 
+}
+.img-project{
+    width: 100%;
 }
 .hoverme figcaption {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(@alpha=0)";
@@ -388,6 +384,7 @@ button i{
     -ms-transform: scale(1.2);
     -o-transform: scale(1.2);
     transform: scale(1.2);
+    overflow: hidden;
 }
 figcaption img{
     padding: 8px;
@@ -677,6 +674,8 @@ figcaption img{
 /*===contacts===*/
 .contacts{
     background-image: url("../img/header-back.jpg");
+    background-attachment: fixed;
+    background-size: cover;
     color: white;
     padding: 5px;
 }
@@ -714,4 +713,27 @@ footer{
     color: white;
     text-align: right;
     padding: 15px;
+}
+
+/*============RSPONSIVE=============*/
+
+@media screen and (min-width: 200px) and (max-width: 768px)
+{
+
+    .home h2{
+        font-size: 38px;
+    }
+    #menu{
+        background-color: black;
+    }
+    #menu a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 15px;
+    }
+    .home span{display: none}
+    .ytb-thumbnail {
+        width: 50%;
+    }
 }
