@@ -1,26 +1,28 @@
+
 /**
  * Created by ya on 15/04/16.
  */
 $(document).ready(function(){
-    $("#webBtn").click(function(){
 
-        $(".html img,.js img,.php img").css({backgroundColor: 'blue'});
+    $("#webBtn").click(function(){
+        $(".html img,.js img,.php img").addClass("turn");
+        $(".languages-explain") .text("texte txte texte azeazaezae azae");
         setTimeout(function(){
-            $(".html img,.js img,.php img").css({backgroundColor: 'white'})
-        }, '1000');
+            $(".html img,.js img,.php img").toggleClass("turn");
+        }, '1000').html("");
     });
     $("#imageBtn").click(function(){
 
-        $(".image").css({backgroundColor: 'white'});
+        $(".image img").addClass("turn");
         setTimeout(function(){
-            $(".image").css({backgroundColor: '#F05F40'})
+            $(".image img").toggleClass("turn");
         }, '1000');
     });
     $("#audioBtn").click(function(){
 
-        $(".audio").css({backgroundColor: 'white'});
+        $(".audio img").addClass("turn");
         setTimeout(function(){
-            $(".audio").css({backgroundColor: '#F05F40'})
+            $(".audio img").toggleClass("turn");
         }, '1000');
     })
 });

@@ -61,7 +61,7 @@ header{
 #toggle div {
     width: 100%;
     height: 5px;
-    background: white;
+    background: #d3d3d3;
     margin: 4px auto;
     transition: all 0.3s;
     backface-visibility: hidden;
@@ -82,11 +82,15 @@ header{
 #menu {
     color: white;
     width: 100%;
+    /*height: 100vh;*/
     padding: 15px;
     text-align: center;
     margin: auto;
     display: none;
     /*border: 1px dashed #9fa6ad;*/
+    background-color:rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+
 }
     nav{
 
@@ -391,7 +395,7 @@ figcaption img{
 /*===cv===*/
 .cv{
     /*background-color: #F05F40;*/
-    background-image: url("../img/cv-backred.jpg");
+    background-image: url("../img/cv-back.png");
     background-size: cover;
     background-attachment: fixed;
     background-color: rgba(242, 96, 65, 0.8);
@@ -604,3 +608,110 @@ figcaption img{
                 left: 28px;
             }
         }
+
+/*===hobbies===*/
+.hobbies{
+    font-weight:lighter;
+    padding-bottom: 50px;
+}
+.hobbies h3{
+    color: #F05F40;
+}
+.hobbies-text{
+    padding: 2%  27%;
+    text-align: justify;
+}
+.hobbies-icon{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.icon-content{
+    min-width: 70px;
+    min-height:80px;
+    text-align: center;
+    padding: 6px;
+}
+
+.icon-content img{
+    filter: grayscale(40%);
+}
+.icon-content img:hover{
+    filter: grayscale(0%);
+    transition: filter 1s;
+}
+.icon-content:hover{
+   color: #F05F40;
+    transition: color 1s;
+}
+    .icon-content:first-child:hover, .icon-content:last-child:hover {
+        border: 1px solid #F05F40;
+        border-radius: 10px;
+        padding: 6px;
+        cursor: pointer;
+        transition: padding 2s;
+        color: #F05F40;
+        transition: color 1s;
+    }
+    .hobbies iframe{
+        width: 100%;
+    }
+/*===music===*/
+    .hobbies-projects{
+        padding: 10px;
+    }
+    .hobbies-projects p{
+        text-align: justify;
+        margin-bottom: 15px;
+    }
+    /*===video===*/
+.video-project{
+    text-align: center;
+}
+    .video-project .provisoire{
+        text-transform: uppercase;
+        font-size: 25px;
+    }
+/*===contacts===*/
+.contacts{
+    background-image: url("../img/header-back.jpg");
+    color: white;
+    padding: 5px;
+}
+.contact-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact-box{
+    min-width: 30%;
+    text-align: center;
+}
+.contact-box i, .contact-box div{
+    padding: 20px;
+    min-height: 100px;
+    cursor: pointer;
+}
+.contact-box div{
+    font-size: 28px;
+}
+.mail,.tel{
+    color: rgba(255, 255, 255, 0.71);
+}
+.social a{
+    color: rgba(240, 95, 64, 0.75);
+}
+.social a:hover{
+    color: #F05F40;
+}
+/*===footer===*/
+footer{
+    background-color: #F05F40;
+    font-weight: lighter;
+    color: white;
+    text-align: right;
+    padding: 15px;
+}
