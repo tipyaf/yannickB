@@ -38,6 +38,7 @@ function onPlayerReady(event) {
     var playButton = document.getElementById("cvVid");
     playButton.addEventListener("click", function() {
         player.playVideo();
+
     });
 
     var stopButtonCv = document.getElementById("md-close");
@@ -56,8 +57,8 @@ function onPlayerReady(event) {
         playerFada.stopVideo();
 
     });
-
-
+//volume sound
+    //event.target.setVolume(0);
 }
 
 // Inject YouTube API script
@@ -82,5 +83,8 @@ $(function(){
     $("#hobbies-stop,#hobbies-stopVid").click(function() {
         widget1.pause()
     });
+
+    //prepare to volume
+   // widget1.setVolume(0.1);
 
 })
