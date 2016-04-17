@@ -50,8 +50,8 @@ function onPlayerReady(event) {
         playerFada.stopVideo();
 
     });
-    var stopButtonMusic = document.getElementById("hobbies-stopVid");
-    stopButtonMusic.addEventListener("click", function() {
+    var stopButtonVideo = document.getElementById("hobbies-stopVid");
+    stopButtonVideo.addEventListener("click", function() {
         playerAna.stopVideo();
         playerFada.stopVideo();
 
