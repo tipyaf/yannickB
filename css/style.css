@@ -169,7 +169,7 @@ header{
     max-width: 100%;
     /*min-width: 100vh;*/
     height: auto;
-    z-index: 2000;
+    z-index: 7000;
     visibility: hidden;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
@@ -190,7 +190,7 @@ header{
     visibility: hidden;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 6001;
     opacity: 0;
     background: #F05F40;
     -webkit-transition: all 0.3s;
