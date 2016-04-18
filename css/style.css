@@ -200,7 +200,7 @@ header{
     margin-top: 20px ;
 
 }
-            /*==modal==*/
+        /*==modal==*/
 .md-modal {
     margin: auto;
     position: fixed;
@@ -815,9 +815,9 @@ footer{
     .ytb-thumbnail {
         width: 50%;
     }
-    .contacts h3{
-        display: none;
-    }
+    /*.contacts h3{*/
+        /*display: none;*/
+    /*}*/
     .contact-box{
         font-size: 10px;
     }

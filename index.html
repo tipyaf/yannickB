@@ -11,9 +11,11 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:400,800' rel='stylesheet' type='text/css'>
-
+    <!-- build:css css/min.css   -->
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- endbuild -->
+
 </head>
 <body>
 <header>
@@ -43,8 +45,11 @@
 
             <p>Au début, il y avait, à la place de ce texte, un "lorem ipsum" mais j'ai décidé de profiter de cet espace pour vous souhaiter la bienvenue et me présenter un peu. Donc bienvenu(e)s ! Je m'appelle Yannick Benchimol, j'ai 34 ans et j'habite à Montpellier. Actuellement en formation de développeur web, je me forme afin de participer à tous vos projets web. Grâce à ce site, je vous propose de me découvrir un peu. Bonne visite!</p>
             <div class="cv-btn">
-                <button id="cvVid" type="button" class="btn md-trigger" data-modal="modal-12"><span>Découvrir le CV vidéo </span><i class="fa fa-youtube" aria-hidden="true"></i></button>
-                <button type="button" class="btn"><span>Télécharger le CV en Pdf</span> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></button>
+                <a id="cvVid"  class="btn md-trigger" data-modal="modal-12"><span>Découvrir le CV vidéo </span><i class="fa fa-youtube" aria-hidden="true"></i></a>
+
+                <a  class="btn"  href="img/Yannick_Benchimol_Developpeur_Web.pdf"
+                                                      download="Yannick_Benchimol_Developpeur_Web_tel:0760649353.pdf" target="_blank"><span>Télécharger le CV en Pdf</span> <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                </a>
             </div>
         </div>
 </section>
@@ -446,12 +451,14 @@
 <script type="text/javascript" src="http://w.soundcloud.com/player/api.js"></script>
 <!--<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>-->
 <!--<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>-->
+<!-- build:js js/combined.js   -->
 <script src="js/menu.js"></script>
 <script src="js/languages.js"></script>
 <script src="js/modal.js"></script>
 <script src="js/hobbies.js"></script>
 <script src="js/contacts.js"></script>
 <script src="js/stop.js"></script>
+<!-- endbuild -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 </body>
