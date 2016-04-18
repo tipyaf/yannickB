@@ -45,8 +45,8 @@ function onPlayerReady(event) {
     stopButtonCv.addEventListener("click", function() {
         player.stopVideo();
     });
-    var stopButtonMusic = document.getElementById("hobbies-stop");
-    stopButtonMusic.addEventListener("click", function() {
+    var stopButtonHobbies = document.getElementById("hobbies-icons");
+    stopButtonHobbies.addEventListener("click", function() {
         playerAna.stopVideo();
         playerFada.stopVideo();
 
@@ -80,7 +80,7 @@ $(function(){
 
 
 
-    $("#hobbies-stop,#hobbies-stopVid").click(function() {
+    $("#hobbies-icons").click(function() {
         widget1.pause()
     });
 

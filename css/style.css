@@ -679,12 +679,7 @@ figcaption img{
     transition: filter 1s;
     transition: filter 1s, -webkit-filter 1s;
 }
-.icon-content:hover{
-   color: #F05F40;
-    -webkit-transition: color 1s;
-    transition: color 1s;
-}
-    .icon-content:first-child:hover, .icon-content:last-child:hover {
+    .icon-content:hover{
         border: 1px solid #F05F40;
         border-radius: 10px;
         padding: 6px;
@@ -706,6 +701,15 @@ figcaption img{
         text-align: justify;
         margin-bottom: 15px;
     }
+    /*===sport, nature===*/
+    .boxit{
+        text-align: center;
+        width: 60%;
+        margin: 0 auto;
+    }
+.boxit p{
+        }
+
     /*===video===*/
 .video-project{
     text-align: center;
