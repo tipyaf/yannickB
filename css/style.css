@@ -744,13 +744,17 @@ figcaption img{
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 10px;
+}
+.contacts{
+    padding-top: 50px;
 }
 .contact-box{
     min-width: 30%;
     text-align: center;
 }
 .contact-box i, .contact-box div{
-    padding: 20px;
+
     min-height: 100px;
     cursor: pointer;
 }
@@ -767,6 +771,9 @@ figcaption img{
     color: #F05F40;
     -webkit-transition: color 2s;
     transition: color 2s;
+}
+.social i{
+    padding:10px;
 }
 /*===footer===*/
 footer{
@@ -807,5 +814,14 @@ footer{
     .home span{display: none}
     .ytb-thumbnail {
         width: 50%;
+    }
+    .contacts h3{
+        display: none;
+    }
+    .contact-box{
+        font-size: 10px;
+    }
+    .contact-box div{
+        font-size: 10px;
     }
 }
