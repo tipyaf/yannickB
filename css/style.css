@@ -327,6 +327,7 @@ header{
     filter: grayscale(35%);
 
 }
+
 .turn, .languages img:hover{
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
@@ -711,7 +712,7 @@ figcaption img{
         margin-bottom: 15px;
     }
     .music-project p{
-        min-height: 110px;
+        min-height: 85px;
     }
     /*===sport, nature===*/
     .boxit{
