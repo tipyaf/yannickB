@@ -20,7 +20,7 @@ $(".icon-content:nth-child(2)").click(function(){
     $(".nature-project").slideUp(1000); // nature hidden
     $(".hobbies-projects").slideUp(1000); // nature hidden
     $(".sport-project").slideToggle(1000);
-    $(".sport-project").addClass("animated bounceInRight");
+    //$(".sport-project").addClass("animated bounceInRight");
 });
 $(".icon-content:nth-child(3)").click(function(){
     $(".video-project").slideUp(1000);

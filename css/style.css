@@ -14,16 +14,14 @@
 
 }
 body{
-    max-width: 2000px;
+    /*max-width: 2000px;*/
     font-family: 'Alegreya Sans', sans-serif;
     letter-spacing: 1px;
     font-weight: bolder;
 
 
 }
-h1{
 
-}
 h2{
     font-size: 80px;
 }
@@ -38,9 +36,19 @@ h3 i{
 }
 #hobbies, #contacts{
     min-height: 90vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 
@@ -302,6 +310,7 @@ header{
     margin-top: 20px;
     text-align: center;
     border-radius: 5px;
+    letter-spacing: 0;
 }
 .languages{
     margin: 20px 0;
@@ -701,14 +710,15 @@ figcaption img{
         text-align: justify;
         margin-bottom: 15px;
     }
+    .music-project p{
+        min-height: 110px;
+    }
     /*===sport, nature===*/
     .boxit{
         text-align: center;
         width: 60%;
         margin: 0 auto;
     }
-.boxit p{
-        }
 
     /*===video===*/
 .video-project{
@@ -815,13 +825,26 @@ footer{
     .ytb-thumbnail {
         width: 50%;
     }
-    /*.contacts h3{*/
-        /*display: none;*/
-    /*}*/
+    .languages{
+        margin: 10px 0;
+        border-left: 0 solid white;
+        border-radius: 0;
+
+    }
+    .btn-languages{
+        display:none;
+    }
+    .boxit img{
+        width: 100%;
+    }
     .contact-box{
         font-size: 10px;
     }
     .contact-box div{
         font-size: 10px;
     }
+    .md-modal iframe{
+        width: 100%;
+    }
+
 }
