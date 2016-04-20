@@ -434,6 +434,7 @@ figcaption img{
     background-color: rgba(242, 96, 65, 0.8);
     padding-top: 75px;
     padding-bottom: 75px;
+    overflow: hidden;
 }
 .cv h3{
     color: white;
