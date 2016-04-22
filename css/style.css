@@ -183,6 +183,14 @@ header{
 .home h2, .home p{
     text-align: center;
 }
+.home p{
+    padding: 0 10%;
+    font-size: 15px;
+    text-align: justify;
+    -moz-text-align-last: center;
+    text-align-last: center;
+    font-weight: lighter;
+}
 .home h2{
     color: #F05F40;
     text-transform: uppercase;
@@ -441,6 +449,7 @@ figcaption img{
     color: white;
 
 }
+
         /* -----------------------------------------------
          * Timeline
          * --------------------------------------------- */
