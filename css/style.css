@@ -776,15 +776,15 @@ figcaption img{
     text-align: center;
 }
 .contact-box i, .contact-box div{
-
     min-height: 100px;
     cursor: pointer;
 }
+
 .contact-box div{
     font-size: 28px;
 }
 .mail,.tel{
-    color: rgba(255, 255, 255, 0.71);
+    color: rgb(255, 255, 255);
 }
 .social a{
     color: rgba(240, 95, 64, 0.75);
