@@ -21,6 +21,9 @@ body{
 
 
 }
+body.modal-open{
+    overflow: hidden;
+}
 
 h2{
     font-size: 80px;

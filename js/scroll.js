@@ -10,3 +10,11 @@ wow = new WOW(
 )
 new WOW().init();
 
+
+//no scroll boby when modal opened
+$(".md-trigger").on("click", function () {
+        $("body").addClass("modal-open");
+})
+    $('.md-close').on("click", function () {
+        $("body").removeClass("modal-open")
+});
