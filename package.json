@@ -1,0 +1,36 @@
+{
+  "name": "cvopp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tipyaf/yannickB.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tipyaf/yannickB/issues"
+  },
+  "homepage": "https://github.com/tipyaf/yannickB#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-bundle-assets": "^2.24.0",
+    "gulp-if": "^2.0.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-minify": "0.0.9",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-postcss": "^6.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.3",
+    "gulp-uncss": "^1.0.5",
+    "gulp-useref": "^3.0.8",
+    "imagemin-pngquant": "^4.2.2",
+    "useref": "^1.2.0"
+  }
+}
