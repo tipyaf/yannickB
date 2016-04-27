@@ -407,15 +407,24 @@
 </main>
 <section id="contacts" class="contacts">
     <h3><i class="fa fa-share wow rotateIn" aria-hidden="true"></i><span> Contacts</span> </h3>
-    <div class="contact-content">
+    <div class="contact-content wow zoomIn">
         <div class="contact-box tel">
             <i class="fa fa-mobile fa-5x" aria-hidden="true"></i>
-            <div></div>
+            <div id="phone"></div>
+            <div class="copyphone">
+            <span class="copyTxtPhone" data-clipboard-target="#phone">Copier le numéro</span>
+        </div>
+
+
         </div>
         <div class="contact-box mail">
             <i class="fa fa-envelope-o fa-5x" aria-hidden="true"></i>
-            <div></div>
+            <div id="mail"></div>
+            <div class="copymail">
+                <span class="copyTxtMail" data-clipboard-target="#mail">Copier l'adresse mail</span>
+            </div>
         </div>
+
     </div>
     <div class="contact-box social">
         <div class="social-content">
@@ -425,6 +434,7 @@
             <a href="https://github.com/tipyaf"title="Rejoignez-moi sur Github!" class="wow flipInX"><i class="fa fa-github" aria-hidden="true"></i></a>
         </div>
         <div></div>
+
     </div>
 
 </section>
@@ -453,6 +463,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script type="text/javascript" src="http://w.soundcloud.com/player/api.js"></script>
 <!-- build:js js/combined.js   -->
+<script src="js/clipboard.min.js"></script>
 <script src="js/menu.js"></script>
 <script src="js/languages.js"></script>
 <script src="js/modal.js"></script>

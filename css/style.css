@@ -76,6 +76,9 @@ header{
     height: 30px;
     margin: 10px 17px;
 }
+#toggle:hover{
+    cursor: pointer;
+}
 
 #toggle div {
     width: 100%;
@@ -789,6 +792,7 @@ figcaption img{
 }
 .contact-box{
     min-width: 30%;
+    min-height: 200px;
     text-align: center;
 }
 .contact-box i, .contact-box div{
@@ -812,6 +816,9 @@ figcaption img{
 }
 .social i{
     padding:10px;
+}
+.copyTxtPhone, .copyTxtMail{
+    font-size: 12px;
 }
 /*===footer===*/
 footer{
