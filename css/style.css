@@ -825,6 +825,9 @@ figcaption img{
     border-radius: 7px;
     cursor: pointer;
 }
+.copyTxtPhone:hover, .copyTxtMail:hover{
+    color: #d6d6d6;
+}
 /*===footer===*/
 footer{
     background-color: #F05F40;
