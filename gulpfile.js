@@ -8,7 +8,6 @@ const pngquant = require('imagemin-pngquant');
 var uncss = require('gulp-uncss');
 
 
-
 //gulp.task('default', function () {
 //    return gulp.src('site.css')
 //        .pipe(uncss({
@@ -24,7 +23,6 @@ gulp.task('compress', function () {
         .pipe(useref())
         .pipe(gulpif('*.js', uglify()))
         .pipe(gulpif('*.css', minifyCss()))
-
         .pipe(gulp.dest('dest'));
 });
 gulp.task('optimg', () => {
@@ -42,6 +40,6 @@ gulp.task('font', function () {
         .pipe(gulp.dest('dest/font'));
 });
 
-gulp.task('default', ['compress', 'optimg', 'font'],function () {
+gulp.task('default', ['compress','optimg', 'font'],function () {
 
 });

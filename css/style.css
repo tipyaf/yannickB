@@ -18,9 +18,8 @@ body{
     font-family: 'Alegreya Sans', sans-serif;
     letter-spacing: 1px;
     font-weight: bolder;
-
-
 }
+
 body.modal-open{
     overflow: hidden;
 }
@@ -53,9 +52,14 @@ h3 i{
         -ms-flex-pack: center;
             justify-content: center;
 }
-
-
-
+p::-moz-selection,h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, #phone::-moz-selection,#mail::-moz-selection, .contacts span::-moz-selection {
+    color: white;
+    background-color: #F05F40 !important;
+}
+p::selection,h1::selection, h2::selection, h3::selection, h4::selection, #phone::selection,#mail::selection, .contacts span::selection {
+    color: white;
+    background-color: #F05F40 !important;
+}
 
 /*===header===*/
 header{
@@ -683,6 +687,10 @@ figcaption img{
 .hobbies-text{
     padding: 2%  27%;
     text-align: justify;
+}
+.body::selection{
+    color: white;
+    background-color: red;
 }
 .hobbies-icon{
     width: 100%;
