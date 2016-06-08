@@ -148,12 +148,7 @@ header{
 
        /* border-bottom: 1px solid aliceblue;*/
     }
-    header h1{
-        font-size: 18px;
-        font-family: 'arkhipregular',sans-serif;
 
-
-    }
     .nav-menu{
         position: fixed;
         display: -webkit-box;
@@ -192,14 +187,31 @@ header{
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 10px;
 
+}
+.identity{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.identity img{
+    border-radius: 50%;
+    border: 3px inset #F05F40;
+    transform: rotate(-8deg);
+}
+header h1{
+    font-size: 23px;
+    font-family: 'arkhipregular',sans-serif;
+    margin-left: 10px;
 
 }
+
 .home h2, .home p{
     text-align: center;
 }
 .home p{
-    padding: 0 10%;
-    font-size: 18px;
+    padding: 10px 30%;
+    font-size: 16px;
     text-align: justify;
     -moz-text-align-last: center;
     text-align-last: center;
@@ -321,7 +333,9 @@ header{
      height: 100%!important;
      position: absolute;
  }
-
+/*.header.contact-box {*/
+    /*min-height: 3px;*/
+/*}*/
 /*==Main==*/
 
 /*==techno==*/
@@ -806,13 +820,10 @@ figcaption img{
 }
 .contact-box{
     min-width: 30%;
-    min-height: 200px;
+    /*min-height: 200px;*/
     text-align: center;
 }
-.contact-box i, .contact-box div{
-    min-height: 100px;
 
-}
 
 .contact-box div{
     font-size: 28px;
