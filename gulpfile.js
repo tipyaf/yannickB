@@ -26,7 +26,7 @@ gulp.task('compress', function () {
         .pipe(gulpif('*.css', minifyCss()))
         .pipe(gulp.dest('dest'));
 });
-gulp.task('optimg', () => {
+gulp.task('optimg', function () {
     return gulp.src('img/*')
         .pipe(imagemin({
             progressive: true,
