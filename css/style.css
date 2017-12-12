@@ -61,6 +61,7 @@ p::selection,h1::selection, h2::selection, h3::selection, h4::selection, #phone:
     background-color: #F05F40 !important;
 }
 
+
 /*===header===*/
 header{
     min-height: 100vh;
@@ -550,6 +551,7 @@ figcaption img{
             float: left;
             border: 1px solid #dcdcdc;
             background: #ffffff;
+            padding: 15px;
             position: relative;
         }
 

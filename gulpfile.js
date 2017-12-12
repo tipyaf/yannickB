@@ -5,16 +5,6 @@ useref = require('gulp-useref'),
     minifyCss = require('gulp-minify-css');
 const imagemin = require('gulp-imagemin');
 const pngquant = require('imagemin-pngquant');
-var uncss = require('gulp-uncss');
-
-
-//gulp.task('default', function () {
-//    return gulp.src('site.css')
-//        .pipe(uncss({
-//            html: ['index.html', 'posts/**/*.html', 'http://example.com']
-//        }))
-//        .pipe(gulp.dest('./out'));
-//});
 
 
 
@@ -37,7 +27,6 @@ gulp.task('optimg', function () {
 });
 gulp.task('font', function () {
      gulp.src('font/*/*')
-
         .pipe(gulp.dest('dest/font'));
 });
 
